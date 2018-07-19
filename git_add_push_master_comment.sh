@@ -8,7 +8,9 @@ git add .
 echo ""
 echo ""
 echo "GIT COMMIT"
-git commit -m "minor changes"
+echo "ENTER COMMIT COMMENT:"
+read comment
+git commit -m "$comment"
 
 echo ""
 echo ""
