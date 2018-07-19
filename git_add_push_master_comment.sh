@@ -15,4 +15,6 @@ git commit -m "$comment"
 echo ""
 echo ""
 echo "GIT PUSH"
-git push origin master
+echo "ENTER BRANCH NAME:"
+read name
+git push origin $name
