@@ -2,15 +2,17 @@
 
 echo ""
 echo ""
-echo "LIST OF CONTAINER"
+echo "GIT ADD ."
 git add .
 
 echo ""
 echo ""
-echo "LIST OF VOLUME"
-git commit -m "minor change"
+echo "GIT COMMIT"
+echo "Enter Commit Comment"
+read comment
+git commit -m "$comment"
 
 echo ""
 echo ""
-echo "LIST OF NETWORK"
+echo "GIT PUSH"
 git push origin master
