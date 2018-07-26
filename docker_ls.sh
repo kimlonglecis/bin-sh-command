@@ -14,4 +14,4 @@ docker volume ls
 echo ""
 echo ""
 echo "LIST OF NETWORK"
-docker volume ls
+docker network ls
