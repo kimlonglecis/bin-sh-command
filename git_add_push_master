@@ -1,4 +1,8 @@
 #!/bin/bash
+echo ""
+echo ""
+echo "GIT STATUS"
+git status
 
 echo ""
 echo ""
