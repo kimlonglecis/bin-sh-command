@@ -8,8 +8,8 @@ git add .
 echo ""
 echo ""
 echo "GIT COMMIT"
-echo "ENTER COMMIT COMMENT:"
-read comment
+read -p "ENTER COMMIT COMMENT: " comment
+comment=${comment:-Minor Changes}
 git commit -m "$comment"
 
 echo ""
