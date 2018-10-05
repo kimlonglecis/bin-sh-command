@@ -1,5 +1,4 @@
 #!/bin/bash
-
 echo ""
 echo ""
 echo "GIT STATUS ."
@@ -23,3 +22,13 @@ echo "GIT PUSH"
 read -p "ENTER BRANCH NAME (Default: master): " name
 name=${name:-master}
 git push origin $name
+
+echo ""
+echo ""
+echo "GIT MERGE TO MASTER"
+git fetch . $name:master
+
+echo ""
+echo ""
+echo "GIT PUSH ORIGIN MASTER"
+git_add_push_master
