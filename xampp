@@ -1,0 +1,7 @@
+#!/bin/bash
+
+function xampp (){
+sudo /opt/lampp/lampp $1
+}
+
+xampp $1
