@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for INPUT in "$@"
+do
+git clone git@bitbucket.org:brandcreative/$INPUT.git
+composer install --no-dev -d $INPUT/
+done

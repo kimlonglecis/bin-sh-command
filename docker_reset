@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for INPUT in "$@"
+do
+
+docker ps -aq --format '{{.Names}}' | grep "^$INPUT" | awk '{print $1}' | xargs -I {} docker stop {} | xargs -I {} docker rm {}
+
+
+
+
+done
