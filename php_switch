@@ -1,0 +1,8 @@
+#!/bin/bash
+
+function php_switch (){
+	sudo a2dismod $2 ; sudo a2enmod $1 ; sudo systemctl restart apache2.service
+	sudo update-alternatives --set php /usr/bin/$1
+}
+
+php_switch $1 $2
