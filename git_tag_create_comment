@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo ""
+echo ""
+echo "GIT DESCRIBE --tags"
+git describe --tags
+
+echo ""
+echo ""
+echo "GIT TAG -a -m"
+read -p "ENTER TAG COMMENT: " comment
+
+echo ""
+read -p "ENTER TAG NAME: " tag_name
+git tag -a -m "$comment" "$tag_name"
