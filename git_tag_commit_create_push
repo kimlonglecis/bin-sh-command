@@ -1,9 +1,16 @@
 #!/bin/bash
 
+
+
 echo ""
 echo ""
 echo "GIT DESCRIBE --tags"
 git describe --tags
+
+echo ""
+echo ""
+echo "GIT ADD ."
+git add .
 
 echo ""
 echo ""
@@ -12,4 +19,15 @@ read -p "ENTER TAG COMMENT: " comment
 
 echo ""
 read -p "ENTER TAG NAME: " tag_name
+git commit -m "$comment"
+
+echo ""
+echo ""
+echo "git tag -a -m $comment $tag_name"
 git tag -a -m "$comment" "$tag_name"
+
+echo ""
+echo ""
+echo "git push origin $tag_name"
+git push origin $tag_name
+
