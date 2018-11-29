@@ -5,5 +5,5 @@ function chmod_f_d(){
     sudo find $1 -type f -exec chmod 0664 {} +
 }
 
-chmod_f_d
+chmod_f_d $1
 

@@ -6,4 +6,4 @@ function php_switch (){
 	sudo systemctl restart apache2.service
 }
 
-php_switch $1 $2
+php_switch $2 $1
