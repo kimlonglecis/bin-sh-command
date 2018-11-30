@@ -1,0 +1,23 @@
+#!/bin/bash
+
+
+
+echo ""
+echo ""
+echo "GIT DESCRIBE --tags"
+git describe --tags
+
+
+echo ""
+read -p "ENTER TAG NAME TO BE DELETED: " tag_name
+
+echo ""
+echo ""
+echo "git tag -d $tag_name"
+git tag -d $tag_name
+
+echo ""
+echo ""
+echo "git push origin :refs/tags/$tag_name"
+git push origin :refs/tags/$tag_name
+
