@@ -1,7 +1,8 @@
 #!/bin/bash
 
 
-git tag -l
+
+
+git push origin --delete $(git tag -l)
 
 git tag -d $(git tag -l)
-git push origin --delete $(git tag -l)
