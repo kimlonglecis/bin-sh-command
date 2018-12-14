@@ -1,0 +1,4 @@
+#!/bin/bash
+
+
+find . -path ./.git -prune -o -type f \( ! -iname "modman" ! -iname "composer.json" ! -iname ".gitignore" ! -iname "README.md"\) -printf "%P\n"> modman
