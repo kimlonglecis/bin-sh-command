@@ -1,3 +1,39 @@
 #!/bin/bash
 
-find . -type d \( -name .git -o -name gulp-workflow \)  -prune -o -type f \( ! -iname "modman" ! -iname ".gitmodules" ! -iname "composer.json" ! -iname ".gitignore" ! -iname "README.md" \) -printf "%P\n"> modman
+function modman(){
+    if [ -z $1 ]
+    then
+    find . -type d \( -name .git -o -name gulp-workflow \)\
+        -prune -o -type f \(\
+            ! -iname "modman"\
+            ! -iname ".gitmodules"\
+            ! -iname "composer.json"\
+            ! -iname ".gitignore"\
+            ! -iname "README.md"\
+            \)\
+        -printf "%P\n"> modman
+    else
+    find $1 -type d \( -name .git -o -name gulp-workflow \)\
+        -prune -o -type f \(\
+            ! -iname "modman"\
+            ! -iname ".gitmodules"\
+            ! -iname "composer.json"\
+            ! -iname ".gitignore"\
+            ! -iname "README.md"\
+            \)\
+        -printf "%P\n"> $1/modman
+    fi
+}
+## echo $location
+## find . -type d \( -name .git -o -name gulp-workflow \)\
+##     -prune -o -type f \(\
+##         ! -iname "modman"\
+##         ! -iname ".gitmodules"\
+##         ! -iname "composer.json"\
+##         ! -iname ".gitignore"\
+##         ! -iname "README.md"\
+##         \)\
+##     -printf "%P\n"> modman
+
+
+modman $1
