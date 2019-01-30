@@ -7,3 +7,7 @@ function php_switch (){
 }
 
 php_switch $2 $1
+
+## Usage:
+## php_switch current_php new_php
+### php list: php5.6 php7.1 php7.2
