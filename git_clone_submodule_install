@@ -1,0 +1,10 @@
+#!/bin/bash
+INPUT2=$2
+for INPUT in "$@"
+do
+git clone --recurse-submodules $2 git@bitbucket.org:brandcreative/$INPUT.git
+composer install -d $INPUT
+cd $INPUT
+
+
+done
