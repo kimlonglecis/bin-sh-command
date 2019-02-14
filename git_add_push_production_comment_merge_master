@@ -35,4 +35,4 @@ git fetch . $name:master
 echo ""
 echo ""
 echo "GIT PUSH PRODUCTION MASTER"
-git_add_push_master
+git_add_push_production
