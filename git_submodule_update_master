@@ -1,3 +1,15 @@
 #!/bin/bash
+echo "git submodule update --init --recursive"
+git submodule update --init --recursive
 
-git submodule update --init --recursive &&  git submodule update --remote --recursive && git submodule foreach git checkout master && git submodule foreach git pull origin master
+echo ""
+echo "git submodule update --remote --recursive"
+#git submodule update --remote --recursive
+
+echo ""
+echo "git submodule foreach git checkout master"
+git submodule foreach git checkout master
+
+echo ""
+echo "git submodule foreach git pull origin master"
+git submodule foreach git pull origin master
