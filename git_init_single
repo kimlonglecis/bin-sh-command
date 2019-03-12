@@ -5,12 +5,12 @@ function gitUpdate(){
     then
     echo "git submodule update --init ./"
     git submodule update --init ./
-    echo "git submodule foreach git checkout master"
-    git submodule foreach git checkout master
+    echo "git checkout master"
+    git checkout master
     else
     echo "git submodule update --init $1"
     git submodule update --init $1
-    
+
     fi
 }
 
