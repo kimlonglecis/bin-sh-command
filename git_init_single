@@ -1,0 +1,16 @@
+#!/bin/bash
+
+function gitUpdate(){
+    if [ -z $1 ]
+    then
+    echo "git submodule update --init ./"
+    git submodule update --init ./
+    else
+    echo "git submodule update --init $1"
+    git submodule update --init $1
+}
+
+
+
+gitUpdate $1
+
