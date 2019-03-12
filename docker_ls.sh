@@ -2,16 +2,21 @@
 
 echo ""
 echo ""
-echo "LIST OF CONTAINER"
+echo "LIST OF CONTAINERS"
 docker ps -a 
 
 
 echo ""
 echo ""
-echo "LIST OF VOLUME"
+echo "LIST OF VOLUMES"
 docker volume ls
 
 echo ""
 echo ""
-echo "LIST OF NETWORK"
+echo "LIST OF UNUSED-VOLUMES"
+docker volume ls -qf dangling=true
+
+echo ""
+echo ""
+echo "LIST OF NETWORKS"
 docker network ls
