@@ -11,6 +11,7 @@ function modman(){
             ! -iname "composer.json"\
             ! -iname ".gitignore"\
             ! -iname "README.md"\
+            ! -iname "Jenkinsfile"\
             \)\
         -printf "%P\n"> modman
     else
@@ -22,6 +23,7 @@ function modman(){
             ! -iname "composer.json"\
             ! -iname ".gitignore"\
             ! -iname "README.md"\
+            ! -iname "Jenkinsfile"\
             \)\
         -printf "%P\n"> $1/modman
     fi
