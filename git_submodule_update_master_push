@@ -1,0 +1,23 @@
+#!/bin/bash
+echo "git submodule update --init --recursive"
+git submodule update --init --recursive
+
+echo ""
+echo "git submodule update --remote --recursive"
+#git submodule update --remote --recursive
+
+echo ""
+echo "git submodule foreach git fetch origin master"
+git submodule foreach --recursive git fetch origin master
+
+echo ""
+echo "git submodule foreach git reset --hard master"
+git submodule foreach --recursive git reset --hard master
+
+echo ""
+echo "git submodule foreach git pull origin master"
+git submodule foreach --recursive git pull origin master
+
+echo ""
+echo "git_add_push_master"
+git_add_push_master
