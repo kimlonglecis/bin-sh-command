@@ -1,6 +1,8 @@
 #! /bin/bash
 
-git_cache_meta
+
+git config credential.helper store
 git config --global user.email 'kimlonglecis@gmail.com'
 git config --global user.name 'long le'
 
+git_cache_meta
