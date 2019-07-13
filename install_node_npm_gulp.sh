@@ -4,6 +4,9 @@
 curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
 sudo apt install nodejs -y
 
+# Install Gulp
+sudo npm install -g gulp
+
 # Install Ruby
 sudo apt install ruby-full ruby-dev -y
 
