@@ -21,5 +21,8 @@ sudo_chmod_d_f /www
 # Creating ~/Desktop/www
 git clone git@bitbucket.org:brandcreative/www.git ~/Desktop/www
 
+# Install s3cmd
+install_s3cmd.sh
+
 # Install docker
 install_docker.sh
