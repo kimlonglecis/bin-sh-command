@@ -26,3 +26,6 @@ install_s3cmd.sh
 
 # Install docker
 install_docker.sh
+
+# Install PHP Versions
+install_php_version.sh

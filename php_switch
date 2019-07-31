@@ -1,9 +1,11 @@
 #!/bin/bash
 
 function php_switch (){
-	sudo a2dismod $2 ; sudo a2enmod $1 ; sudo systemctl restart apache2.service
-	sudo update-alternatives --set php /usr/bin/$1
+	sudo a2dismod php$2 ; sudo a2enmod php$1 ; sudo systemctl restart apache2.service
+	sudo update-alternatives --set php /usr/bin/php$1
 	sudo systemctl restart apache2.service
+	sudo systemctl stop apache2.service
+	sudo update-rc.d apache2 disable
 }
 
 php_switch $2 $1

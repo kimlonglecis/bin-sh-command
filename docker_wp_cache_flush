@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker exec -it -u nginx $1_web_1 wp cache flush
