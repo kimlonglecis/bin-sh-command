@@ -5,7 +5,7 @@ install_composer.sh
 
 
 # Install vscode_dbeaver
-install_vscode_dbeaver.sh
+install_vscode.sh
 
 # Install node_npm_gulp
 install_node_npm_gulp.sh
