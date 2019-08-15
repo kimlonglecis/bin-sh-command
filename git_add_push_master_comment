@@ -22,6 +22,11 @@ git commit -m "$comment"
 
 echo ""
 echo ""
+echo "AUTO-CHANGELOG"
+auto-changelog
+
+echo ""
+echo ""
 echo "GIT PUSH"
 read -p "ENTER BRANCH NAME (Current Branch: $branch): " name
 name=${name:-$branch}
