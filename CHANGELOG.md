@@ -1,4 +1,14 @@
-### adding git_hook_post_commit (HEAD -> master)
+### minor changes (HEAD -> master)
+>Thu, 15 Aug 2019 11:05:11 -0700
+
+>Author: long le (kimlonglecis@gmail.com)
+
+>Commiter: long le (kimlonglecis@gmail.com)
+
+
+
+
+### adding git_hook_post_commit (origin/master, origin/HEAD)
 >Thu, 15 Aug 2019 10:45:33 -0700
 
 >Author: long le (kimlonglecis@gmail.com)
@@ -8,7 +18,7 @@
 
 
 
-### minor changes (origin/master, origin/HEAD)
+### minor changes
 >Wed, 7 Aug 2019 23:18:27 -0700
 
 >Author: long le (kimlonglecis@gmail.com)
