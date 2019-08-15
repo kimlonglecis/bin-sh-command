@@ -1,4 +1,14 @@
-### test1. adding test file2. removing test file (HEAD -> master)
+### minor changes (HEAD -> master)
+>Thu, 15 Aug 2019 11:28:21 -0700
+
+>Author: long le (kimlonglecis@gmail.com)
+
+>Commiter: long le (kimlonglecis@gmail.com)
+
+
+
+
+### test1. adding test file2. removing test file (origin/master, origin/HEAD)
 >Thu, 15 Aug 2019 11:27:24 -0700
 
 >Author: long le (kimlonglecis@gmail.com)
@@ -8,7 +18,7 @@
 
 
 
-### minor changes (origin/master, origin/HEAD)
+### minor changes
 >Thu, 15 Aug 2019 11:05:11 -0700
 
 >Author: long le (kimlonglecis@gmail.com)
