@@ -1,0 +1,10 @@
+#!/bin/bash
+echo ""
+echo ""
+echo "composer update --no-dev"
+composer update --no-dev
+
+echo ""
+echo ""
+echo "npm install"
+npm install
