@@ -1,0 +1,7 @@
+#!/bin/bash
+
+function post_commit(){
+    ln ~/Desktop/www/08.composer-files/composer-files-core/git-hook/post-commit $1
+}
+
+post_commit $1
