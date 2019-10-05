@@ -8,7 +8,7 @@ function modman(){
             ! -iname "modman"\
             ! -iname ".gitmodules"\
             ! -iname ".git"\
-            ! -iname "composer.json"\
+            ! -iname "composer.*"\
             ! -iname ".gitignore"\
             ! -iname "README.md"\
             ! -iname "Jenkinsfile"\
@@ -20,7 +20,7 @@ function modman(){
             ! -iname "modman"\
             ! -iname ".gitmodules"\
             ! -iname ".git"\
-            ! -iname "composer.json"\
+            ! -iname "composer.*"\
             ! -iname ".gitignore"\
             ! -iname "README.md"\
             ! -iname "Jenkinsfile"\
