@@ -1,4 +1,34 @@
 ### minor changes (HEAD -> master)
+>Fri, 4 Oct 2019 17:42:06 -0700
+
+>Author: long le (kimlonglecis@gmail.com)
+
+>Commiter: long le (kimlonglecis@gmail.com)
+
+
+
+
+### minor changes
+>Fri, 4 Oct 2019 14:06:31 -0700
+
+>Author: long le (kimlonglecis@gmail.com)
+
+>Commiter: long le (kimlonglecis@gmail.com)
+
+
+
+
+### minor changes (origin/master, origin/HEAD)
+>Thu, 29 Aug 2019 11:05:20 -0700
+
+>Author: long le (kimlonglecis@gmail.com)
+
+>Commiter: long le (kimlonglecis@gmail.com)
+
+
+
+
+### minor changes
 >Thu, 15 Aug 2019 11:28:21 -0700
 
 >Author: long le (kimlonglecis@gmail.com)
@@ -8,7 +38,7 @@
 
 
 
-### test1. adding test file2. removing test file (origin/master, origin/HEAD)
+### test1. adding test file2. removing test file
 >Thu, 15 Aug 2019 11:27:24 -0700
 
 >Author: long le (kimlonglecis@gmail.com)

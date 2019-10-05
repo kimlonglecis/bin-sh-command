@@ -3,24 +3,24 @@
 function modman(){
     if [ -z $1 ]
     then
-    find . -type d \( -name .git -o -name gulp-workflow -o -name vendor \)\
+    find . -type d \( -name .git -o -name gulp-workflow -o -name vendor -o -name gulp-linux-workflow* \)\
         -prune -o -type f \(\
             ! -iname "modman"\
             ! -iname ".gitmodules"\
             ! -iname ".git"\
-            ! -iname "composer.json"\
+            ! -iname "composer.*"\
             ! -iname ".gitignore"\
             ! -iname "README.md"\
             ! -iname "Jenkinsfile"\
             \)\
         -printf "%P\n"> modman
     else
-    find $1 -type d \( -name .git -o -name gulp-workflow -o -name vendor \)\
+    find $1 -type d \( -name .git -o -name gulp-workflow -o -name vendor -o -name gulp-linux-workflow* \)\
         -prune -o -type f \(\
             ! -iname "modman"\
             ! -iname ".gitmodules"\
             ! -iname ".git"\
-            ! -iname "composer.json"\
+            ! -iname "composer.*"\
             ! -iname ".gitignore"\
             ! -iname "README.md"\
             ! -iname "Jenkinsfile"\
