@@ -13,6 +13,10 @@ apt-cache policy docker-ce -y
 sudo apt install docker-ce -y
 
 sudo usermod -aG docker ${USER}
+sudo usermod -aG systemd-journal ${USER}
+sudo usermod -aG www-data ${USER}
+
+
 
 su - ${USER}
 
