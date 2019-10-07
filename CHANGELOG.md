@@ -1,4 +1,14 @@
 ### minor changes (HEAD -> master)
+>Mon, 7 Oct 2019 10:25:03 -0700
+
+>Author: long le (kimlonglecis@gmail.com)
+
+>Commiter: long le (kimlonglecis@gmail.com)
+
+
+
+
+### minor changes (origin/master, origin/HEAD)
 >Fri, 4 Oct 2019 17:42:06 -0700
 
 >Author: long le (kimlonglecis@gmail.com)
@@ -18,7 +28,7 @@
 
 
 
-### minor changes (origin/master, origin/HEAD)
+### minor changes
 >Thu, 29 Aug 2019 11:05:20 -0700
 
 >Author: long le (kimlonglecis@gmail.com)
