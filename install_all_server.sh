@@ -8,3 +8,6 @@ install_node_npm_gulp.sh
 
 # Install docker
 install_docker.sh
+
+# Install docker Compose
+install_docker_compose.sh
