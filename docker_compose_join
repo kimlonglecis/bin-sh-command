@@ -2,7 +2,7 @@
 
 
 function dockerCompose(){
-    docker-compose -f docker-compose.join.yml -f docker-compose.join.override.yml -p $1 up --force-recreate --build -d
+    docker-compose -f docker-compose.join.yml -f docker-compose.join.override.yml up --force-recreate --build -d
 }
 
 dockerCompose $1
