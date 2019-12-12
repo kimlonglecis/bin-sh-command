@@ -5,7 +5,7 @@ install_composer.sh
 
 
 # Install vscode_dbeaver
-install_vscode.sh
+#install_vscode.sh
 
 # Install node_npm_gulp
 install_node_npm_gulp.sh
@@ -26,6 +26,9 @@ install_s3cmd.sh
 
 # Install docker
 install_docker.sh
+
+# Install docker Compose
+install_docker_compose.sh
 
 # Install PHP Versions
 install_php_version.sh
