@@ -24,11 +24,12 @@ git clone git@bitbucket.org:brandcreative/www.git ~/Desktop/www
 # Install s3cmd
 install_s3cmd.sh
 
-# Install docker
-install_docker.sh
-
 # Install docker Compose
 install_docker_compose.sh
 
 # Install PHP Versions
 install_php_version.sh
+
+# Install docker
+install_docker.sh
+
