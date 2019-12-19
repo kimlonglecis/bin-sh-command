@@ -1,0 +1,2 @@
+#!/bin/bash
+for d in ./*/ ; do (cd "$d" && git_add_commit_push_master); done
