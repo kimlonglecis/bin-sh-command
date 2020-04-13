@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Getting current branch name
+branch=$(git branch | grep \* | cut -d ' ' -f2)
+echo "Current branch: $branch"
+
+echo ""
+echo ""
+echo "GIT STATUS"
+git status
+
+
+read -p "Execute Commit and Push(Default: Y/n): " comment
+comment=${comment:-Y}
+if [ $comment = "Y" ];
+then
+    echo ""
+    echo ""
+    echo "GIT ADD ."
+    git add .
+
+    echo ""
+    echo ""
+    echo "GIT COMMIT"
+    git commit
+    
+    echo ""
+    echo ""
+    echo "GIT PUSH"
+    git push origin $branch
+else
+    echo "exit"
+    exit
+fi
+
