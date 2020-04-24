@@ -16,9 +16,7 @@ git add .
 echo ""
 echo ""
 echo "GIT COMMIT"
-read -p "ENTER COMMIT COMMENT (Default: Minor Changes): " comment
-comment=${comment:-Minor Changes}
-git commit -m "$comment"
+git commit
 
 echo ""
 echo ""
@@ -35,4 +33,4 @@ git fetch . $name:master
 echo ""
 echo ""
 echo "GIT PUSH ORIGIN MASTER"
-git_add_push_master
+git_add_commit_push_master
