@@ -1,9 +1,9 @@
 #!/bin/bash
 
-function Magento2UpdateDockerComposeJoinOverride(
-    sed -i 's/#- VIRTUAL_HOST=skindustriesusa.com/- VIRTUAL_HOST=skindustriesusa.com/g' ./docker-compose.join.override.yml
+function Magento2UpdateDockerComposeJoinOverride(){
+    sed -i 's/#- VIRTUAL_HOST/- VIRTUAL_HOST/g' ./docker-compose.join.override.yml
     sed -i 's/- DEPLOY_MODE=production/- DEPLOY_MODE=developer/g' ./docker-compose.join.override.yml
-)
+}
 
 
 function dockerCompose(){
