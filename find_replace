@@ -1,0 +1,8 @@
+#!/bin/bash
+
+function findReplace(){
+    grep -lr . | xargs sed -i '' -e "'s/($1)/($2)/g'"
+}
+
+findReplace $1 $2
+
