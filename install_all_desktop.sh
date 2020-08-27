@@ -35,3 +35,9 @@ install_php_version.sh
 # Install docker
 install_docker.sh
 
+# Scrapy
+install_scrapy.sh
+
+# install utilities
+install_terminix.sh
+install_caffeine.sh
