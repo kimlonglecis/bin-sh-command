@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 sudo add-apt-repository ppa:atareao/atareao
 sudo apt-get update

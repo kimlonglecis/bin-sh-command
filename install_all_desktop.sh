@@ -39,5 +39,6 @@ install_docker.sh
 install_scrapy.sh
 
 # install utilities
-install_terminix.sh
+install_tilix.sh
 install_caffeine.sh
+sudo apt-get install -y flameshot
