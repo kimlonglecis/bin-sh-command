@@ -2,7 +2,7 @@
 
 sudo apt install python3-pip -y
 
-pip3 install pandas scrapy 
+pip3 install pandas scrapy  jupyterlab
 
 
 

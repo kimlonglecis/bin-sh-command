@@ -32,8 +32,6 @@ install_docker_compose.sh
 # Install PHP Versions
 install_php_version.sh
 
-# Install docker
-install_docker.sh
 
 # Scrapy
 install_scrapy.sh
@@ -42,3 +40,11 @@ install_scrapy.sh
 install_tilix.sh
 install_caffeine.sh
 sudo apt-get install -y flameshot
+
+
+
+
+
+# Always Install Last
+# Install docker
+install_docker.sh
