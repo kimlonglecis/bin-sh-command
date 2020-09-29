@@ -4,7 +4,7 @@
 install_composer.sh
 
 # Install node_npm_gulp
-install_node_npm_gulp.sh
+# install_node_npm_gulp.sh
 
 
 # Install docker Compose
@@ -34,4 +34,6 @@ echo "vm.max_map_count=262144" >> /etc/sysctl.conf
 
 # Always install last
 # Install Docker
+install_docker_compose.sh
+
 install_docker.sh
