@@ -4,7 +4,7 @@ sudo apt install curl php-cli php-mbstring git unzip -y
 
 #curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer ##Composer ready
 
-sudo curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer --version=1.10.16 
+curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer --version=1.10.16 
 
 
 
