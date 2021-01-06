@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # Install Composer
-install_composer.sh
+install_composer_v1.sh
 
 # Install node_npm_gulp
 # install_node_npm_gulp.sh
