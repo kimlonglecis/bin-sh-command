@@ -1,6 +1,0 @@
-#!/bin/bash
-
-cd /www/docker-composer-mysql-percona-redis/
-
-exec bash
-
