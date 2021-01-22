@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+function dockerUpdate(){
+    docker update --restart=unless-stopped $1
+}
+
+dockerUpdate $1
