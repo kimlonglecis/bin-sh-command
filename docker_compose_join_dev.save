@@ -1,0 +1,15 @@
+#!/bin/bash
+
+function Magento2UpdateDockerComposeJoinOverride(){
+    sed -i 's/#- VIRTUAL_HOST/- VIRTUAL_HOST/g' ./docker-compose.join.override.yml
+    sed -i 's/- DEPLOY_MODE=production/- DEPLOY_MODE=developer/g' ./docker-compose.join.yml
+
+}
+
+
+function dockerCompose(){
+    docker-compose -f docker-compose.join.yml -f docker-compose.join.override.yml up --force-recreate --build -d
+}
+
+Magento2UpdateDockerComposeJoinOverride
+dockerCompose $1

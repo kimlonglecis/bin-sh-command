@@ -36,3 +36,7 @@ sudo sysctl -w vm.max_map_count=262144
 install_docker_compose.sh
 
 install_docker.sh
+
+
+# Install Utilities
+sudo apt install -y colordiff

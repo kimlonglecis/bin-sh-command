@@ -39,7 +39,7 @@ install_scrapy.sh
 # install utilities
 install_tilix.sh
 install_caffeine.sh
-sudo apt-get install -y flameshot
+sudo apt-get install -y flameshot colordiff
 
 
 

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd /www/docker-composer-lamp5.6-magento-modinjapan/composer-installer/html/.modman/magento-theme-athlete-child
+
+exec bash
+
