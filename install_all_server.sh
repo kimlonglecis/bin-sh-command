@@ -40,3 +40,4 @@ install_docker.sh
 
 # Install Utilities
 sudo apt install -y colordiff
+sudo timedatectl set-timezone America/Los_Angeles
