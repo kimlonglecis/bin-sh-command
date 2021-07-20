@@ -1,3 +1,0 @@
-#!/bin/bash
-
-docker exec -it percona_db /backup/export_databases_single.sh
