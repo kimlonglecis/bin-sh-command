@@ -1,0 +1,7 @@
+#! /bin/bash
+
+
+for d in *; do
+    cd $d & git_ignore_permission.sh
+    git -C $d pull origin master
+done
