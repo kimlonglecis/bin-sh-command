@@ -29,8 +29,6 @@ install_s3cmd.sh
 # Install docker Compose
 install_docker_compose.sh
 
-# Install PHP Versions
-install_php_version.sh
 
 
 # Scrapy
