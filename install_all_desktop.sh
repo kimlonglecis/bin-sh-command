@@ -4,7 +4,7 @@
 install_composer.sh
 
 # Install Vue Cli
-install_vuecli.sh
+#install_vuecli.sh
 
 # Install vscode_dbeaver
 #install_vscode.sh
@@ -46,3 +46,5 @@ sudo apt-get install -y flameshot colordiff
 # Always Install Last
 # Install docker
 install_docker.sh
+
+sudo update-alternatives --config x-terminal-emulator

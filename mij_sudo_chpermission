@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo_chown /www/docker-composer-lamp5.6-magento-modinjapan/composer-installer/html
+sudo_chmod_d_f_775 /www/docker-composer-lamp5.6-magento-modinjapan/composer-installer/html
+
