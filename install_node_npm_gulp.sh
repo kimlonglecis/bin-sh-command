@@ -1,8 +1,8 @@
 #! /bin/bash
 
 # Install Nodejs
-curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
-sudo apt install nodejs -y
+curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
+sudo apt install nodejs npm -y
 
 # Install Gulp
 sudo npm install -g npm gulp npm-check
