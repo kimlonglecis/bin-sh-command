@@ -1,6 +1,0 @@
-#!/bin/bash
-
-cd /www/docker-composer-lamp5.6-magento-modinjapan
-
-exec bash
-
