@@ -18,3 +18,15 @@ echo ""
 echo ""
 echo "GIT PUSH"
 git push origin master
+
+
+
+echo ""
+echo ""
+echo "CHANGELOG.md generate"
+FILE=CHANGELOG.md
+if [ ! -f "$FILE" ]
+then
+    touch $FILE
+fi
+(echo ""; echo ""; echo ""; git log --name-status HEAD^..HEAD | cat - "$FILE") >  temp && mv temp "$FILE"
