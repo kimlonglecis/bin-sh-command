@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /www/docker-composer-lamp7-magento2-modinjapan
+exec bash
+
