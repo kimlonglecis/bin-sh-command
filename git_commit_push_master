@@ -1,25 +1,25 @@
 #!/bin/bash
-echo ""
-echo ""
-echo "GIT STATUS"
-git status
+
+branch=$(git branch | grep \* | cut -d ' ' -f2)
+
 
 echo ""
 echo ""
-echo "GIT ADD ."
-git add .
+echo "GIT STATUS ."
+git status
+
 
 echo ""
 echo ""
 echo "GIT COMMIT"
-git commit -m "minor changes"
+git commit
 
 echo ""
 echo ""
 echo "GIT PUSH"
-git push origin master
-
-
+read -p "ENTER BRANCH NAME (Current Branch: $branch): " name
+name=${name:-$branch}
+git push origin $name
 
 echo ""
 echo ""
