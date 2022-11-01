@@ -1,10 +1,5 @@
 #!/bin/bash
 
-echo ""
-echo ""
-echo "AUTO-CHANGELOG"
-auto-changelog
-
 branch=$(git branch | grep \* | cut -d ' ' -f2)
 
 
@@ -30,3 +25,13 @@ echo "GIT PUSH"
 read -p "ENTER BRANCH NAME (Current Branch: $branch): " name
 name=${name:-$branch}
 git push origin $name
+
+echo ""
+echo ""
+echo "CHANGELOG.md generate"
+FILE=CHANGELOG.md
+if [ ! -f "$FILE" ]
+then
+    touch $FILE
+fi
+(echo ""; echo ""; echo ""; git log --name-status HEAD^..HEAD | cat - "$FILE") >  temp && mv temp "$FILE"
