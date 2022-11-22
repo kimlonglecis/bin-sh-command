@@ -38,7 +38,7 @@ install_scrapy.sh
 install_tilix.sh
 install_caffeine.sh
 sudo apt-get install -y flameshot colordiff
-
+install_libreoffice.sh
 
 
 
