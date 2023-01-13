@@ -1,8 +1,14 @@
 #! /bin/bash
 
-# Install Nodejs
-curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
-sudo apt install nodejs -y
+# # Install Nodejs
+# curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
+# sudo apt install nodejs -y
+
+# Install NVM Node Version Manager
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+# Install Latest Nodejs
+nvm install --lts
 
 # Install Gulp
 sudo npm install -g npm gulp npm-check
