@@ -1,0 +1,13 @@
+#!/bin/bash
+
+function dockerPs(){
+    docker ps --format '{{.Names}}'
+}
+
+function dockerExec(){
+    read -p "ENTER DOCKER NAME: " name
+    docker exec -it -u nginx "$name" bash
+}
+
+dockerPs
+dockerExec $1
