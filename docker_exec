@@ -1,8 +1,13 @@
 #!/bin/bash
 
-
-function dockerExec(){
-    docker exec -it $1 bash
+function dockerPs(){
+    docker ps --format '{{.Names}}'
 }
 
+function dockerExec(){
+    read -p "ENTER DOCKER NAME: " name
+    docker exec -it "$name" bash
+}
+
+dockerPs
 dockerExec $1
