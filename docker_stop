@@ -3,7 +3,7 @@
 for INPUT in "$@"
 do
 
-docker stop $(docker ps -aq --format '{{.Names}}'  | grep "^$INPUT"  | awk '{print $1}')
+docker stop $(docker ps -a --format '{{.Names}}'  | grep "^$INPUT"  | awk '{print $1}')
 
 # | awk '{print $1}' | xargs -I {} docker start {} | xargs -I {}
 
