@@ -5,7 +5,8 @@
 # sudo apt install nodejs -y
 
 # Install NVM Node Version Manager
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
+
 
 # Install Latest Nodejs
 nvm install --lts
