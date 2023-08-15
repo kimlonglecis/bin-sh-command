@@ -5,9 +5,28 @@ function dockerPs(){
 }
 
 function dockerExec(){
-    read -p "ENTER DOCKER NAME: " name
-    docker exec -it "$name" bash
+    read -p "Enter the number of the container to execute: " number
+
+    # Get the container name using the selected number
+    container_name=$(docker ps --format '{{.Names}}' | sed -n "${number}p")
+
+    if [ -z "$container_name" ]; then
+        echo "Invalid container number."
+    else
+        docker exec -it "$container_name" bash
+    fi
 }
 
-dockerPs
-dockerExec $1
+# Call the dockerPs function
+containers=$(dockerPs)
+
+# List containers with green-colored numbers
+i=1
+echo "Containers:"
+while read -r line; do
+    echo -e "\033[32m$i. $line\033[0m"  # Green color for the number
+    ((i++))
+done <<< "$containers"
+
+# Call the dockerExec function
+dockerExec
