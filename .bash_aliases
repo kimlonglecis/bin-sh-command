@@ -6,4 +6,4 @@ alias www="cd ~/Desktop/www"
 alias sc="scrapy"
 alias DES="cd ~/Desktop"
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
-
+alias DEN="docker_exec_nginx"
