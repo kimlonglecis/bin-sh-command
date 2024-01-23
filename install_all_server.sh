@@ -30,13 +30,15 @@ sudo sysctl -w vm.max_map_count=262144
 
 
 
-# Always install last
-# Install Docker
-install_docker_compose.sh
 
-install_docker.sh
 
 
 # Install Utilities
 sudo apt install -y colordiff
 sudo timedatectl set-timezone America/Los_Angeles
+
+
+# Always install last
+# Install Docker
+install_docker_compose.sh
+install_docker.sh
