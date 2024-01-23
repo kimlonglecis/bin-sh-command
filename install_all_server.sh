@@ -7,8 +7,7 @@ install_composer.sh
 # install_node_npm_gulp.sh
 
 
-# Install docker Compose
-install_docker_compose.sh
+
 
 # Increasing vm.max_map_couint = 262144 to keep Elasticsearch Node on
 sudo sysctl -w fs.inotify.max_user_watches=524288
