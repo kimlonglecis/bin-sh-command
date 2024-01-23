@@ -3,7 +3,7 @@
 echo ""
 echo ""
 echo "LIST OF CONTAINERS"
-docker ps -a 
+docker ps -a -s
 
 
 echo ""
