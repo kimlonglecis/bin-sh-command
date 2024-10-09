@@ -13,26 +13,6 @@ install_composer.sh
 sudo sysctl -w fs.inotify.max_user_watches=524288
 sudo sysctl -w vm.max_map_count=262144
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Install Utilities
 sudo apt install -y colordiff
 sudo timedatectl set-timezone America/Los_Angeles
@@ -41,4 +21,4 @@ sudo timedatectl set-timezone America/Los_Angeles
 # Always install last
 # Install Docker
 install_docker_compose.sh
-install_docker.sh
+# install_docker.sh
